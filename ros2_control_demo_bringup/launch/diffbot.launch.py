@@ -50,8 +50,8 @@ def generate_launch_description():
         executable="ros2_control_node",
         parameters=[robot_description, robot_controllers],
         output={
-            "stdout": "screen",
-            "stderr": "screen",
+            "stdout": "log",
+            "stderr": "log",
         },
     )
     robot_state_pub_node = Node(
